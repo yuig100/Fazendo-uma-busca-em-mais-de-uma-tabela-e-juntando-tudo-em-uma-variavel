@@ -54,7 +54,7 @@ public function pesquisar(Request $request)
 
         if ($tabelaAll->isNotEmpty()) {
             // Cria a instancia do paginador com os resultados mesclados
-            return view('Sua view', ['$tabelaAll' => $tabelaAll]);
+            return view('Sua view', ['tabelaAll' => $tabelaAll]);
         } else {
             return redirect('/');
         }
